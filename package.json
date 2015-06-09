@@ -1,0 +1,30 @@
+{
+  "name": "buffalojs-blog",
+  "version": "0.0.0",
+  "description": "Example blog for BuffaloJS meetup",
+  "main": "server.js",
+  "dependencies": {
+    "access-log": "^0.3.9",
+    "marked": "^0.3.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bahamas10/buffalojs-blog.git"
+  },
+  "keywords": [
+    "buffalojs",
+    "buffalo",
+    "blog"
+  ],
+  "author": "Dave Eddy <dave@daveeddy.com> (http://www.daveeddy.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bahamas10/buffalojs-blog/issues"
+  },
+  "homepage": "https://github.com/bahamas10/buffalojs-blog#readme"
+}
