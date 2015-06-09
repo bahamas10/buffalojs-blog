@@ -60,8 +60,6 @@ function onrequest(req, res) {
         return;
       }
 
-      console.dir(s);
-
       template(marked(s), function(err, body) {
         if (err) {
           res.statusCode = 500;
@@ -80,7 +78,7 @@ function onrequest(req, res) {
 function template(html, cb) {
   fs.readFile('./index.html', 'utf8', function(err, s) {
     if (err)
-      cb(err);
+      return cb(err);
 
     cb(null, s.replace('<!-- CONTENT -->', html));
   });
